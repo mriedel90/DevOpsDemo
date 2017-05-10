@@ -11,6 +11,9 @@ namespace DevOpsDemo.ConsoleApp
         static void Main(string[] args)
         {
             //test  
+
+            Console.WriteLine("Hello!");
+            Console.ReadLine();
         }
     }
 }
