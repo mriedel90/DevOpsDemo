@@ -12,7 +12,7 @@ namespace DevOpsDemo.ConsoleApp
         {
             //test  
 
-            Console.WriteLine("Hello!!!");
+            Console.WriteLine("Hello!");
             Console.ReadLine();
         }
     }
