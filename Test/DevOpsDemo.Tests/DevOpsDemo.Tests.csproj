@@ -50,8 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="when_using_worker_for_simple_adding.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Source\DevOpsDemo.ConsoleApp\DevOpsDemo.ConsoleApp.csproj">
+      <Project>{feab4bff-a475-4ba9-8f41-eaf0f9ffe3e7}</Project>
+      <Name>DevOpsDemo.ConsoleApp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
