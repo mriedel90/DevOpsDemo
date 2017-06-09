@@ -1,14 +1,14 @@
 ﻿using System;
 using System.ComponentModel;
 using DevOpsDemo.ConsoleApp;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DevOpsDemo.Tests
 {
-    [TestFixture]
+    [TestClass]
     public class when_using_worker_for_simple_adding
     {
-        [Test]
+        [TestMethod]
         public void given_valid_ints_returns_sum()
         {
             //Arrange
@@ -19,12 +19,12 @@ namespace DevOpsDemo.Tests
             var actual = Worker.SimpleAdd(a, b);
 
             //Assert
-            Assert.IsInstanceOf<int>(actual, "Result is not int");
+            //Assert.IsInstanceOf<int>(actual, "Result is not int");
             Assert.AreEqual(expected, actual, "Expected result is not as expected");
         }
 
 
-        [Test]
+        [TestMethod]
         public void given_valid_negative_ints_returns_sum()
         {
             //Arrange
@@ -35,12 +35,12 @@ namespace DevOpsDemo.Tests
             var actual = Worker.SimpleAdd(a, b);
 
             //Assert
-            Assert.IsInstanceOf<int>(actual, "Result is not int");
+            //Assert.IsInstanceOf<int>(actual, "Result is not int");
             Assert.AreEqual(expected, actual, "Expected result is not as expected");
         }
 
 
-        [Test]
+        [TestMethod]
         public void given_valid_mixed_ints_returns_sum()
         {
             //Arrange
@@ -51,7 +51,7 @@ namespace DevOpsDemo.Tests
             var actual = Worker.SimpleAdd(a, b);
 
             //Assert
-            Assert.IsInstanceOf<int>(actual, "Result is not int");
+            //Assert.IsInstanceOf<int>(actual, "Result is not int");
             Assert.AreEqual(expected, actual, "Expected result is not as expected");
         }
     }
