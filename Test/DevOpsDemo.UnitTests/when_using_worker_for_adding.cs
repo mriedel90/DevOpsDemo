@@ -1,7 +1,8 @@
 ﻿using System;
+using DevOpsDemo.ConsoleApp;
 using NUnit.Framework;
 
-namespace DevOpsDemo.ConsoleApp.UnitTests
+namespace DevOpsDemo.UnitTests
 {
     [TestFixture]
     public class when_using_worker_for_adding
@@ -11,7 +12,7 @@ namespace DevOpsDemo.ConsoleApp.UnitTests
         {
             //Arrange
             int a = 1, b = 2, expected = 3;
-            
+
             //Act
             var result = Worker.SimpleAdd(a, b);
 
