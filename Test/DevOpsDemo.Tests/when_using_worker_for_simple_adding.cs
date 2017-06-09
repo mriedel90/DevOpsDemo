@@ -44,7 +44,7 @@ namespace DevOpsDemo.Tests
         public void given_valid_mixed_ints_returns_sum()
         {
             //Arrange
-            int a = 1, b = -2, expected = -1; 
+            int a = 1, b = -2, expected = -1;
 
 
             //Act
