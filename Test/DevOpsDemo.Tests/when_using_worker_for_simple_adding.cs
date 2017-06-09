@@ -38,5 +38,21 @@ namespace DevOpsDemo.Tests
             Assert.IsInstanceOf<int>(actual, "Result is not int");
             Assert.AreEqual(expected, actual, "Expected result is not as expected");
         }
+
+
+        [Test]
+        public void given_valid_mixed_ints_returns_sum()
+        {
+            //Arrange
+            int a = 1, b = -2, expected = -1;
+
+
+            //Act
+            var actual = Worker.SimpleAdd(a, b);
+
+            //Assert
+            Assert.IsInstanceOf<int>(actual, "Result is not int");
+            Assert.AreEqual(expected, actual, "Expected result is not as expected");
+        }
     }
 }
