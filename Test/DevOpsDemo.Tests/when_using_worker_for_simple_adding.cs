@@ -12,7 +12,7 @@ namespace DevOpsDemo.Tests
         public void given_valid_ints_returns_sum()
         {
             //Arrange
-            int a = 1, b = 2, expected = 3;
+            int a = 1, b = 2, expected = 3; 
 
 
             //Act
