@@ -1,14 +1,14 @@
 ﻿using System;
 using System.ComponentModel;
 using DevOpsDemo.ConsoleApp;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace DevOpsDemo.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class when_using_worker_for_simple_adding
     {
-        [TestMethod]
+        [Test]
         public void given_valid_ints_returns_sum()
         {
             //Arrange
@@ -19,12 +19,12 @@ namespace DevOpsDemo.Tests
             var actual = Worker.SimpleAdd(a, b);
 
             //Assert
-            Assert.IsInstanceOfType(actual, typeof(int), "Result is not int");
+            Assert.IsInstanceOf<int>(actual, "Result is not int");
             Assert.AreEqual(expected, actual, "Expected result is not as expected");
         }
 
 
-        [TestMethod]
+        [Test]
         public void given_valid_negative_ints_returns_sum()
         {
             //Arrange
@@ -35,7 +35,7 @@ namespace DevOpsDemo.Tests
             var actual = Worker.SimpleAdd(a, b);
 
             //Assert
-            Assert.IsInstanceOfType(actual, typeof(int), "Result is not int");
+            Assert.IsInstanceOf<int>(actual, "Result is not int");
             Assert.AreEqual(expected, actual, "Expected result is not as expected");
         }
     }
