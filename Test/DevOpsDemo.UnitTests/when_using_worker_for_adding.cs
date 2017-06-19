@@ -12,7 +12,7 @@ namespace DevOpsDemo.UnitTests
         {
             //Arrange
             int a = 1, b = 2, expected = 3;
-
+             
             //Act
             var result = Worker.SimpleAdd(a, b);
 
