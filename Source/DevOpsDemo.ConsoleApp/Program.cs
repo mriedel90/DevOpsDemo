@@ -10,9 +10,11 @@ namespace DevOpsDemo.ConsoleApp
     {
         static void Main(string[] args)
         {
-            //test  
-
-            Console.WriteLine("Hello!!");
+            Console.WriteLine("Enter first number:");
+            var first = int.Parse(Console.ReadLine() ?? "");
+            Console.WriteLine("Enter second number:");
+            var second = int.Parse(Console.ReadLine() ?? "");
+            Console.WriteLine($"Sum is: {Worker.SimpleAdd(first, second)}");
             Console.ReadLine();
         }
     }
