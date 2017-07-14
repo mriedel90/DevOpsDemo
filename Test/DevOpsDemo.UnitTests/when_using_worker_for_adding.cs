@@ -33,7 +33,22 @@ namespace DevOpsDemo.UnitTests
             //Assert
             Assert.IsInstanceOf<int>(result, "Result is not an int");
             Assert.AreEqual(expected, result, "Result does not match expected sum");
-        }        
+        }
+
+
+        [Test]
+        public void given_valid_nums_then_return_sum()
+        {
+            //Arrange
+            int a = -1, b = 5, expected = 4;
+
+            //Act
+            var result = Worker.SimpleAdd(a, b);
+
+            //Assert
+            Assert.IsInstanceOf<int>(result, "Result is not an int");
+            Assert.AreEqual(expected, result, "Result does not match expected sum");
+        }
 
     }
 
